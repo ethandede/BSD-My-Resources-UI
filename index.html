@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>BSD Intranet - My Resources UI</title>
+    <meta name="description" content="BSD My Resources UI">
+    <meta name="author" content="Ethan Ede">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<header>
+</header>
+
+<div id="my-resources">
+    <h2 class="resources-title">My Resources</h2>
+    <ul id="icon-grid">
+        <li>
+            <div class="container">
+                <div class="icon"><img src="img/iconPlus.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>Add New</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="close"></div>
+            <div class="container">
+                <div class="icon"><img src="img/iconAbsence.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>Absence Management</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="close"></div>
+            <div class="container">
+                <div class="icon">
+                    <img src="img/iconGoogle.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>Google Drive</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="close"></div>
+            <div class="container">
+                <div class="icon">
+                    <img src="img/iconOutlookWebApp.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>Outlook Web App</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="close"></div>
+            <div class="container">
+                <div class="icon">
+                    <img src="img/iconSynergy2.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>Synergy</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="close"></div>
+            <div class="container">
+                <div class="icon">
+                    <img src="img/iconTeacherSource.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>Teacher Source</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="close"></div>
+            <div class="container">
+                <div class="icon">
+                    <img src="img/iconIoInsights.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>IO Insights BaselineEdge</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="close"></div>
+            <div class="container">
+                <div class="icon">
+                    <img src="img/iconPivot.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>Pivot</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="close"></div>
+            <div class="container">
+                <div class="icon">
+                    <img src="img/iconMedicalAdmin.png" alt=""/></div>
+                <div class="icon-title">
+                    <p>Medical Administrative...</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div id="container-modal">
+    <h2 class="resources-title">Manage My Resources</h2>
+    <div class="wrap">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="">
+            <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+        <div class="reset-search">
+            <p>Reset Search</p>
+        </div>
+    </div>
+    <p>Select resources you’d like active for your “My Resources section. Green light indicates active, white box
+        inactive.</p>
+    <div class="active-sort">
+        <p>Active <i class="fa fa-sort"></i></p>
+    </div>
+    <div class="resources-list">
+        <ul>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconOutlookWebApp.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>Outlook Web App</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="outlook-web-app" type="radio" name="field" value="Outlook Web App">
+                    <label for="outlook-web-app"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconMedicalAdmin.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>Medical Administration</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="medical-administration" type="radio" name="field"
+                           value="Medical Administration">
+                    <label for="medical-administration"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconIoInsights.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>IO Insights</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="io-insights" type="radio" name="field" value="IO Insights">
+                    <label for="io-insights"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconPivot.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>Pivot</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="pivot" type="radio" name="field" value="Pivot">
+                    <label for="pivot"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconGoogle.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>Google Drive</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="google" type="radio" name="field" value="Google">
+                    <label for="google"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconOutlookWebApp.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>Outlook Web App</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="outlook-2" type="radio" name="field" value="Outlook 2">
+                    <label for="outlook-2"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconAbsence.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>Absence Management</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="absence-2" type="radio" name="field" value="Absence 2">
+                    <label for="absence-2"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconIoInsights.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>IO Insights</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="io-insights-2" type="radio" name="field" value="IO Insights 2">
+                    <label for="io-insights-2"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconPivot.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>Pivot</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="pivot-2" type="radio" name="field" value="Pivot 2">
+                    <label for="pivot-2"></label>
+                </div>
+            </li>
+            <li class="resources-row">
+                <div class="resources-icon">
+                    <img class="icon" src="img/iconGoogle.png" alt=""/>
+                </div>
+                <div class="resources-name">
+                    <p>Google Drive</p>
+                </div>
+                <div class="resources-radio">
+                    <input class="radio" id="google-3" type="radio" name="field" value="Google 3">
+                    <label for="google-3"></label>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="row-button">
+        <input type="button" class="button" value="Save">
+    </div>
+</div>
+</body>
+</html>

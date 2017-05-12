@@ -1,0 +1,286 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-size: 62.5%;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+h2.resources-title {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #444;
+    overflow: hidden;
+    text-align: justify;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/*********************************************
+    MAIN SECTIONS
+*********************************************/
+
+#container-my-resources {
+    width: 50%;
+    padding: 35px;
+}
+#container-modal {
+    width: 650px;
+    height: 650px;
+    background-color: white;
+    border: 1px gray solid;
+    padding: 5px 30px 35px;
+    margin-left: 100px;
+
+}
+
+
+
+/*********************************************
+    ICONS
+*********************************************/
+
+ul#icon-grid {
+    padding: 0;
+    margin: 15px 0 0;
+    clear: both;
+}
+
+#icon-grid li {
+    display: inline-block;
+}
+
+#icon-grid li {
+    margin: 0 0 20px 20px;
+}
+
+li .container {
+    width: 110px;
+    height: 140px;
+    padding: 0 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 194, 194);
+    box-shadow: 0 0 15px 0 rgba(3, 3, 3, 0.45);
+    background-color: white;
+    overflow: visible;
+
+}
+
+li .icon {
+    margin: 0 auto;
+    width: 120px;
+    height: 90px;
+}
+
+.icon-title {
+    display: table;
+    margin: 0 auto;
+}
+
+.icon img {
+    max-width: 100%;
+    margin: 10% 25% 0 25%;
+}
+
+.icon-title p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 1.4em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.close {
+    position: relative;
+    left: 108px;
+    top: 13px;
+    height: 25px;
+    width: 25px;
+    background-image: url('../img/iconCloseXGray.svg');
+    background-repeat: no-repeat;
+}
+
+
+
+/*********************************************
+    MY RESOURCES MODAL
+*********************************************/
+
+/* Search Bar */
+
+.search {
+    width: 70%;
+    position: relative;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    padding: 5px 5px 5px 50px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: #444;
+    background-color: #f3f3f3;
+    font-size: 1.4em;
+}
+
+.searchTerm:focus {
+    color: #444;
+}
+
+.searchButton {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.wrap {
+    width: 100%; /*Resize the wrap to see the search bar change!*/
+    margin: 0 0 30px 0;
+    height: 40px;
+}
+
+.reset-search {
+    float: left;
+    margin-left: 15px;
+    text-decoration: underline;
+    color: #9b9b9b;
+}
+
+/* Active Sort */
+
+.active-sort {
+    float: right;
+    margin: 0 25px 0 0;
+    color: #9b9b9b;
+}
+
+/* Resources List */
+
+.resources-list {
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    border: 1px solid #9b9b9b;
+    overflow: scroll;
+}
+
+.resources-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.resources-row {
+    width: 100%;
+    height: 50px;
+    clear: both;
+}
+
+.resources-row p {
+    line-height: 1.5;
+}
+
+li:nth-child(odd).resources-row {
+    background-color: #f3f3f3;
+}
+
+.resources-icon {
+    float: left;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.resources-icon img {
+    width: 40px;
+    height: 40px;
+    padding: 5px 0 5px 25px;
+}
+
+.resources-name {
+    float: left;
+    width: 60%;
+    min-width: 175px;
+    padding-left: 40px;
+
+}
+
+.resources-radio {
+    float: left;
+    margin: 0;
+    width: 60px;
+    height: 50px;
+}
+
+/* Radio Buttons */
+
+input[type=radio   ]:not(old) {
+    width: 32px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+input[type=radio   ]:not(old) + label {
+    display: inline-block;
+    margin: -5px 0 0 100px;
+    padding-left: 37px;
+    background: url('../img/spriteRadioButton_32x64.png') no-repeat 0 0;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+input[type=radio]:not(old):checked + label {
+    background-position: 0 -32px;
+}
+
+/* Save Button */
+
+.row-button {
+    margin-top: 25px;
+}
+
+.button {
+    position: relative;
+    left: 80%;
+    background-color: #409140; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-border-radius: .2em;
+    -moz-border-radius: .2em;
+    border-radius: .2em;
+}
+
+.button:hover {
+    background-color: #519b51;
+    transition: .1s;
+}
